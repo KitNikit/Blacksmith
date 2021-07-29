@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from 'next/link';
+import Image from 'react-bootstrap/Image';
 
 const Navigation = () => {
 	return (
@@ -10,7 +11,7 @@ const Navigation = () => {
 			<Container>
 				<Link href='/'>
 					<Navbar.Brand className='pointer'>
-						<img src='/4.png' />
+						<Image src='/4.png' />
 						Главная страница
 					</Navbar.Brand>
 				</Link>
