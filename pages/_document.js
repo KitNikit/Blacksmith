@@ -5,7 +5,6 @@ class MyDocument extends Document {
 		return (
 			<Html lang='ru'>
 				<Head>
-					<title>Document</title>
 					<link rel='shortcut icon' href='favicon.png' type='image/png'></link>
 					<link rel='preconnect' href='https://fonts.googleapis.com'></link>
 					<link
