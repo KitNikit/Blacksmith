@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
 import Row from 'react-bootstrap/Row';
@@ -23,22 +24,22 @@ export default function Home() {
 							Мастерская <br /> художественной ковки
 						</h5>
 						<h1>Кентавр</h1>
-						<h7>Эксклюзивные кованые изделия ручной работы на заказ</h7>
+						<h5>Эксклюзивные кованые изделия ручной работы на заказ</h5>
 						<Container className='benefits'>
 							<Row className='justify-content-md-center'>
 								<Col xs lg='2'>
-									<Image src='/5.png' />
+									<Image className='icon' src='/icon1.png' />
 									<br />
 									Собственное Производство
 								</Col>
 								<Col md='auto'>
-									<Image src='/6.png' />
+									<Image className='icon' src='/icon2.png' />
 									<br />
 									Изготовление по <br />
 									проектам заказчика
 								</Col>
 								<Col xs lg='2'>
-									<Image src='/7.png' />
+									<Image className='icon' src='/icon3.png' />
 									<br />
 									Более 20 лет
 									<br /> успешной работы
@@ -51,7 +52,11 @@ export default function Home() {
 			<Container>
 				<Carousel>
 					<Carousel.Item>
-						<Image className='d-block w-100' src='/9.jpg' alt='First slide' />
+						<Image
+							className='d-block w-100'
+							src='/carusel.jpg'
+							alt='First slide'
+						/>
 						<Carousel.Caption>
 							<h3>Бесплатная доставка</h3>
 							<p>Бесплатно доставляем и выгружаем ваш заказ.</p>
@@ -59,7 +64,11 @@ export default function Home() {
 					</Carousel.Item>
 
 					<Carousel.Item>
-						<Image className='d-block w-100' src='/9.jpg' alt='Second slide' />
+						<Image
+							className='d-block w-100'
+							src='/carusel.jpg'
+							alt='Second slide'
+						/>
 
 						<Carousel.Caption>
 							<h3>Бесплатная сборка</h3>
@@ -67,7 +76,11 @@ export default function Home() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
-						<Image className='d-block w-100' src='/9.jpg' alt='Third slide' />
+						<Image
+							className='d-block w-100'
+							src='/carusel.jpg'
+							alt='Third slide'
+						/>
 
 						<Carousel.Caption>
 							<h3>Бесплатный замер</h3>
@@ -85,47 +98,48 @@ export default function Home() {
 
 				<Row xs={1} md={2} className='g-4'>
 					<Col>
-						<Card>
-							<Card.Img variant='top' src='/15.jpg' />
-							<Card.Body>
-								<Card.Title className='text-center'>Перила</Card.Title>
-							</Card.Body>
-						</Card>
+						<Link href='/perila' passHref>
+							<Card className='category'>
+								<Card.Img variant='top' src='/perila.jpg' />
+								<Card.Body>
+									<Card.Title className='text-center'>Перила</Card.Title>
+								</Card.Body>
+							</Card>
+						</Link>
 					</Col>
 					<Col>
-						<Card>
-							<Card.Img variant='top' src='/16.jpg' />
-							<Card.Body>
-								<Card.Title className='text-center'>Ворота</Card.Title>
-							</Card.Body>
-						</Card>
+						<Link href='/vorota' passHref>
+							<Card className='category'>
+								<Card.Img variant='top' src='/vorota.jpg' />
+								<Card.Body>
+									<Card.Title className='text-center'>Ворота</Card.Title>
+								</Card.Body>
+							</Card>
+						</Link>
 					</Col>
 					<Col>
-						<Card>
-							<Card.Img variant='top' src='/13.jpg' />
-							<Card.Body>
-								<Card.Title className='text-center'>Лавки</Card.Title>
-							</Card.Body>
-						</Card>
+						<Link href='/lavki' passHref>
+							<Card className='category'>
+								<Card.Img variant='top' src='/lavki.jpg' />
+								<Card.Body>
+									<Card.Title className='text-center'>Лавки</Card.Title>
+								</Card.Body>
+							</Card>
+						</Link>
 					</Col>
 					<Col>
-						<Card>
-							<Card.Img variant='top' src='/14.jpg' />
-							<Card.Body>
-								<Card.Title className='text-center'>Мосты</Card.Title>
-							</Card.Body>
-						</Card>
+						<Link href='/mosti' passHref>
+							<Card className='category'>
+								<Card.Img variant='top' src='/mosti.jpg' />
+								<Card.Body>
+									<Card.Title className='text-center'>Мосты</Card.Title>
+								</Card.Body>
+							</Card>
+						</Link>
 					</Col>
 				</Row>
 			</Container>
-			<footer>
-				<Link href='tel:+89100000000'>
-					<a className='tel'>
-						<Image src='8.png' />
-						+7 910 000 00 00
-					</a>
-				</Link>
-			</footer>
+			<Footer />
 		</>
 	);
 }

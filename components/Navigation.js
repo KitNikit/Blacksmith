@@ -11,30 +11,29 @@ const Navigation = () => {
 			<Container>
 				<Link href='/'>
 					<Navbar.Brand className='pointer'>
-						<Image src='/4.png' />
+						<Image src='/logo.png' />
 						Главная страница
 					</Navbar.Brand>
 				</Link>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='me-auto'>
-						<Link href='/test' passHref>
+						<Link href='/info' passHref>
 							<Nav.Link>Информация</Nav.Link>
 						</Link>
 
 						<NavDropdown title='Галерея' id='collasible-nav-dropdown'>
-							<Link href='/' passHref>
-								<NavDropdown.Item>Ковка</NavDropdown.Item>
+							<Link href='/perila' passHref>
+								<NavDropdown.Item>Перила</NavDropdown.Item>
 							</Link>
-							<Link href='/' passHref>
-								<NavDropdown.Item href='#action/3.2'>Дерево</NavDropdown.Item>
+							<Link href='/vorota' passHref>
+								<NavDropdown.Item>Ворота</NavDropdown.Item>
 							</Link>
-							<Link href='/' passHref>
-								<NavDropdown.Item href='#action/3.3'>Металл</NavDropdown.Item>
+							<Link href='/lavki' passHref>
+								<NavDropdown.Item>Лавки</NavDropdown.Item>
 							</Link>
-							<NavDropdown.Divider />
-							<Link href='/' passHref>
-								<NavDropdown.Item href='#action/3.4'>Другое</NavDropdown.Item>
+							<Link href='/mosti' passHref>
+								<NavDropdown.Item>Мосты</NavDropdown.Item>
 							</Link>
 						</NavDropdown>
 					</Nav>

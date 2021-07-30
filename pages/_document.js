@@ -6,10 +6,12 @@ class MyDocument extends Document {
 			<Html lang='ru'>
 				<Head>
 					<link rel='shortcut icon' href='favicon.png' type='image/png'></link>
-					<link rel='preconnect' href='https://fonts.googleapis.com'></link>
-					<link rel='preconnect' href='https://fonts.gstatic.com'></link>
 					<link
-						href='https://fonts.googleapis.com/css2?family=Roboto&display=swap'
+						href='https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap'
+						rel='stylesheet'
+					></link>
+					<link
+						href='https://fonts.googleapis.com/css2?family=Alice&display=swap'
 						rel='stylesheet'
 					></link>
 				</Head>
