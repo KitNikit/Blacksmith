@@ -18,7 +18,7 @@ const Perila = () => {
 			<Navigation />
 			<Container>
 				<Row className='galery'>
-					<Col>
+					<Col className='galery-col'>
 						<Image
 							onClick={() => setShow1(true)}
 							className='galeryImg'
@@ -36,7 +36,7 @@ const Perila = () => {
 					</Col>
 				</Row>
 				<Row className='galery'>
-					<Col>
+					<Col className='galery-col'>
 						<Image
 							onClick={() => setShow3(true)}
 							className='galeryImg'
