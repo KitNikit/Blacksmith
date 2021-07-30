@@ -70,6 +70,12 @@ body {
 .carousel-item {
 	max-height: 300px;
 }
+@media (max-width: 600px) {
+	.carousel-caption h3 {
+		margin: 0;
+		font-size: 23px;
+	}
+}
 
 .card-img-top {
 	max-height: 384px;
