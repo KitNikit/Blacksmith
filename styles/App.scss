@@ -88,9 +88,17 @@ body {
 	margin-bottom: 50px;
 }
 
-.galeryImg {
-	max-height: 384px;
+@media (min-width: 601px) {
+	.galeryImg {
+		max-height: 384px;
+	}
 }
+@media (max-width: 600px) {
+	.galeryImg {
+		max-width: 340px;
+	}
+}
+
 .zoom {
 	height: 100%;
 	width: 100%;
